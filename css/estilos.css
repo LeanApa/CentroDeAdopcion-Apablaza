@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* --------------- HEADER -----------------------*/
+header{
+    background-color: aqua;
+}
+
+nav {
+    padding: 20px;
+}
+
+.menuSuperior {
+    list-style-type: none;
+    text-align: center;
+}
+
+.menuSuperior li {
+    list-style: none;
+    margin-top: 40px;
+}
+
+
+.menuSuperior a {
+    text-decoration: none;
+    background-color: #44500d;
+    color: white;
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* -------------------------------body-------------------------------------- */
+
+body {
+    background-color: rgb(240, 236, 216);
+    color: #1b2949;
+    font-family: 'Roboto', sans-serif;
+}
+
+body a{
+    text-decoration: none;
+}
+
+.banner{
+    background-image: url(../img/images.jpg);
+    background-position: left;
+    padding: 70px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.card img{
+    width: 300px;
+}
+
+.galeria{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.galeria img{
+    width: 450px;
+}
+
+
+
+.encabezado{
+    grid-area: encabezado;
+}
+
+.cuerpo{
+    grid-area: cuerpo;
+}
+
+.pie{
+    grid-area: pie;
+}
+
+.grid{
+    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-areas:
+                        "encabezado"
+                        "cuerpo"
+                        "pie";
+
+    grid-gap: 10px;
+}
+/* --------------------footer ------------------------------------*/
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    
+}
+
+/* --------------------Transformaciones ------------------------------------*/
+.zoom {
+    transform: scale(1);
+    transition: all 500ms ease-in-out;
+}
+
+.zoom:hover {
+    transform: scale(0.8);
+    border-radius: 10px;
+}
+
+/* --------------------Medias ------------------------------------*/
+
+@media (min-width:768px){
+
+    header{
+        background-color: aqua;
+        display: flex;
+        justify-content:space-evenly;
+    }
+
+    .menuSuperior li {
+        display: inline-block;
+    }
+
+    .adopcion{
+        padding: 15px;
+        text-align: center;
+    }
+
+    .card{
+        margin-top: 170px;
+        margin-bottom: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .card img{
+        width: 200px;
+    }
+
+    .galeria img{
+        width: 300px;
+    }
+
+    footer{
+        margin-top: 100px;
+    }
+
+    .encabezado{
+        grid-area: encabezado;
+    }
+
+    .cuerpo{
+        grid-area: cuerpo;
+    }
+
+    .pie{
+        grid-area: pie;
+    }
+
+    .grid{
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 0.1fr 3fr 1fr;
+        display: grid;
+        grid-template-areas:
+                            "encabezado encabezado encabezado"
+                            "cuerpo cuerpo cuerpo"
+                            "pie pie pie";
+
+        grid-gap: 10px;
+    }
+
+    footer{
+        margin-top: 200px;
+    }
+
+}
+
+@media  (min-width:1024px){
+
+    header{
+        background-color: aqua;
+        display: flex;
+        justify-content:space-evenly;
+        padding: 5px;
+        
+    }
+    
+    .menuSuperior li {
+        display: inline-block;
+    }
+    
+    .adopcion{
+        padding: 15px;
+        text-align: center;
+    }
+
+    .card{
+        margin-top: 150px;
+        margin-bottom: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .card img{
+        width: 500px;
+    }
+
+    .menuSuperior li {
+        display: inline-block;
+    }
+
+    .galeria img{
+    width: 500px;
+    }
+
+    .grid{
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows:8em 3fr 1fr;
+        display: grid;
+        grid-template-areas:
+                            "encabezado encabezado encabezado"
+                            "cuerpo cuerpo cuerpo"
+                            "pie pie pie";
+
+        grid-gap: 10px;
+    }
+
+    
+}
