@@ -1,51 +1,175 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <title>Pichichos</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../icomoon/style.css">
+    
+        <!-- Bootstrap CSS -->
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+    
+    
+        <!--    CSS Autor  -->
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="icon" href="../imagenes/pawprint.png" type="image/ico">
+    
+    
+    
+        <title>Patitas</title>
+    </head>
 
 <body>
-    <div class="grid">
-        <header class="encabezado">
-            <img src="../img/logo.png" alt="Logo">
-            <nav class="menuSuperior">
-                <ul>
-                    <li class="zoom"><a href="../index.html">Home</a></li>
-                    <li class="zoom"><a href="adopcion.html">Adopción</a></li>
-                    <li class="zoom"><a href="nosotros.html">Sobre Nosotros</a></li>
-                    <li class="zoom"><a href="direccion.html">Dónde Estamos</a></li>
-                    <li class="zoom"><a href="contacto.html">Contacto</a></li>
+
+    <!--    navbar         -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container p-0 p-md-4 me-5">
+            <a class="navbar-brand" href="../index.html"><img class="align-text-bottom" src="../imagenes/logo.png" alt="Logo"><span class="d-none d-md-inline pl-md-2 h1">Patitas</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mt-4" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="../index.html"><span class="icon-home me-1"></span>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="adopcion.html"><span class="icon-images me-1"></span>Adopción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html"><span class="icon-office me-1"></span>Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="donde.html"><span class="icon-location2 me-1"></span>Dónde estamos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html"><span class="icon-phone me-1"></span>Contacto</a>
+                    </li>
                 </ul>
-            </nav>
-        </header>
-        <main class="cuerpo">
-            <section class="adopcion">
-                <h1>¿Querés adoptar?</h1>
-                <p>Adoptar es un acto de amor y de responsabilidad, por eso es necesario estar completamente seguros de que estamos capacitados y listos para tener un perro. Un animal de compañía dependerá toda su vida de nosotros. Recordá que un perro puede vivir entre 15 y 20 años y estás asumiendo un compromiso serio por todo ese tiempo.</p>
-            </section>
-            <section class="galeria">
-                <h2>Acá podés encontrar a tu nuevo mejor amigo</h2>
-                <div>
-                    <img class="zoom" src="../img/adoptar.jpg" alt="Perro" id="img1">
-                    <img class="zoom" src="../img/adoptar2.jpg" alt="Perro" id="img2">
-                    <img class="zoom" src="../img/adoptar3.jpg" alt="Perro" id="img3">
-                    <img class="zoom" src="../img/adoptar4.jpg" alt="Perro" id="img4">
+            </div>
+        </div>
+    </nav>
+
+
+    <!--    fin navbar     -->
+
+    <header class="mt-md-4 pt-4 container pb-4">
+
+        <h1 class="h2">¿Querés adoptar?</h1>
+
+    </header>
+
+    <main>
+        <section class="container">
+            <p>Adoptar es un acto de amor y de responsabilidad, por eso es necesario estar completamente seguros de que estamos capacitados y listos para tener un perro. Un animal de compañía dependerá toda su vida de nosotros. Recordá que un perro puede vivir entre 15 y 20 años y estás asumiendo un compromiso serio por todo ese tiempo.</p>
+
+            <h3>Acá podés encontrar a tu nuevo mejor amigo</h3>
+            
+<!--            Comienzo muestra de perros en cards-->
+
+            <div class="row">
+                <div class="col-12 mt-2 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="../imagenes/adoptar.jpg" alt="Pistas">
+                        <div class="card-body">
+                            <h4 class="card-title">Pistas</h4>
+                            <ul class="card-text ul-reset pl-0">
+                                <li>Sexo: Hembra</li>
+                                <li>Edad: Adulta / Nacimiento: 06/2006</li>
+                                <li>Raza: Mestiza</li>
+                                <li>Tamaño: Grande</li>
+                                <li>Carácter: Muy sociable</li>
+                            </ul>
+                            <a class="btn" href="contacto.html" role="button">Contactar</a>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </main>
-        <footer class="pie">
-            <p>Todos los derechos reservados - @LeandroApablaza 2022</p>
-        </footer>
-    </div>
+                <div class="col-12 mt-2 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="../imagenes/adoptar2.jpg" alt="Nilo image">
+                        <div class="card-body">
+                            <h4 class="card-title">Nilo</h4>
+                            <ul class="card-text ul-reset pl-0">
+                                <li>Sexo: Macho</li>
+                                <li>Edad: Adulto / Nacimiento: 03/2019</li>
+                                <li>Raza: Mestizo</li>
+                                <li>Tamaño: Grande</li>
+                                <li>Carácter: Juguetón</li>
+                            </ul>
+                            <a class="btn" href="contacto.html" role="button">Contactar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-2 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="../imagenes/adoptar3.jpg" alt="Gador">
+                        <div class="card-body">
+                            <h4 class="card-title">Gador</h4>
+                            <ul class="card-text ul-reset pl-0">
+                                <li>Sexo: Macho</li>
+                                <li>Edad: Adulto / Nacimiento: 09/2012</li>
+                                <li>Raza: Mestizo</li>
+                                <li>Tamaño: Medio</li>
+                                <li>Carácter: Sociable</li>
+                            </ul>
+                            <a class="btn" href="contacto.html" role="button">Contactar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-2 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="../imagenes/adoptar4.jpg" alt="Garrucha">
+                        <div class="card-body">
+                            <h4 class="card-title">Garrucha</h4>
+                            <ul class="card-text ul-reset pl-0">
+                                <li>Sexo: Hembra</li>
+                                <li>Edad: Adulta / Nacimiento: 06/2013</li>
+                                <li>Raza: Mestiza</li>
+                                <li>Tamaño: Medio</li>
+                                <li>Carácter: Tímida</li>
+                            </ul>
+                            <a class="btn" href="contacto.html" role="button">Contactar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</body>
 
-</html>
+
+    </main>
+
+    <footer class="container-fluid text-white p-4 text-center mt-md-4 mt-2">
+        <p>También podés encontrarnos en nuestras redes sociales</p>
+
+        <!--            Unicamente van a redirigir a la home de las redes sociales ya que es inventada la pagina-->
+        <ul class="d-flex justify-content-center">
+            <li class="mx-3">
+                <a href="https://www.facebook.com/" target="_blank"><span class="icon-facebook2"></span><span class="ms-2 d-none d-md-inline">Facebook</span></a>
+            </li>
+            <li class="mx-3">
+                <a href="https://www.instagram.com/" target="_blank"><span class="icon-instagram"></span><span class="ms-2 d-none d-md-inline">Instagram</span></a>
+            </li>
+            <li class="mx-3">
+                <a href="https://twitter.com/" target="_blank"><span class="icon-tumblr2"></span><span class="ms-2 d-none d-md-inline">Twitter</span></a>
+            </li>
+        </ul>
+        <small>Copyright 2020</small>
+
+    </footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+
+
+</body></html>

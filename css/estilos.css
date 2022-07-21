@@ -1,249 +1,150 @@
-* {
-    margin: 0;
-    padding: 0px;
-    box-sizing: border-box;
+/*
+
+Skin, tema
+
+*/
+
+nav{
+    background-color: #3993dd;
 }
 
-
-/* --------------- HEADER -----------------------*/
-header{
-    background-color: aqua;
-}
-
-nav {
-    padding: 20px;
-}
-
-.menuSuperior {
-    list-style-type: none;
-    text-align: center;
-}
-
-.menuSuperior li {
-    list-style: none;
-    margin-top: 40px;
-}
-
-
-.menuSuperior a {
-    text-decoration: none;
-    background-color: #44500d;
+.btn{
+    background-color: #ff9800;
     color: white;
-    padding: 1rem;
-    font-size: 1.4rem;
-    font-weight: 600;
+    
 }
 
-/* -------------------------------body-------------------------------------- */
 
-body {
-    background-color: rgb(240, 236, 216);
-    color: #1b2949;
+.navbar-dark .navbar-toggler-icon{
+    background-image: url(../imagenes/menu.svg);
+    border: none;
+}
+/*0d47a1*/
+
+h1,
+h2,
+h3,
+h4{
+    color: #0d47a1;
+}
+
+.contacto a{
+    color: #0d47a1;
+}
+
+
+
+footer{
+    background-color: #212121;  
+}
+
+footer ul{
+    list-style: none;
+    font-size: 1.38rem;
+    padding: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color:white;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: grey;
+}
+
+a{
+    text-decoration: none;
+}
+
+.ul-reset{
+    list-style: none;
+}
+
+/*
+
+Fuentes
+
+*/
+
+
+body{
     font-family: 'Roboto', sans-serif;
 }
 
-body a{
-    text-decoration: none;
-}
-
-.banner{
-    background-image: url(../img/images.jpg);
-    background-position: left;
-    padding: 70px;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.card{
-    margin-top: 100px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.card div{
-    margin-top: 5px;
-    margin-bottom: 5px;
+h2,h3,h4,h5{
+    font-family: 'Roboto Slab', serif;
     
 }
 
-.card img{
-    width: 300px;
-}
 
-.galeria{
-    text-align: center;
-    margin-top: 100px;
-}
+/*
 
-.galeria img{
-    width: 450px;
-}
+
+Layout
+
+*/
 
 
 
-.encabezado{
-    grid-area: encabezado;
-}
-
-.cuerpo{
-    grid-area: cuerpo;
-}
-
-.pie{
-    grid-area: pie;
-}
-
-.grid{
-    grid-template-columns: 1fr;
-    display: grid;
-    grid-template-areas:
-                        "encabezado"
-                        "cuerpo"
-                        "pie";
-
-    grid-gap: 10px;
-}
-/* --------------------footer ------------------------------------*/
-
-footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 50px;
+#quienes{
+    background-image: url(../imagenes/images.jpg);
+    height: 25rem;
+    background-position:left;
+    background-size: 36rem;
+    font-size: 1.188rem;
+    color: #0d47a1;
     
 }
 
-/* --------------------Transformaciones ------------------------------------*/
-.zoom {
-    transform: scale(1);
-    transition: all 200ms ease-in-out;
+
+.contacto a span{
+    font-size: 1.875rem;
 }
 
-.zoom:hover {
-    transform: scale(0.8);
-    border-radius: 10px;
+.donde{
+    font-size: 1.5rem;
 }
 
-/* --------------------Medias ------------------------------------*/
 
-@media (min-width:768px){
 
-    header{
-        background-color: aqua;
-        display: flex;
-        justify-content:space-evenly;
-    }
+/*
 
-    .menuSuperior li {
-        display: inline-block;
-    }
+mapa
 
-    .adopcion{
-        padding: 15px;
-        text-align: center;
-    }
+*/
 
-    .card{
-        margin-top: 170px;
-        margin-bottom: 10px;
-        text-align: center;
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .card img{
-        width: 200px;
-    }
-
-    .galeria img{
-        width: 300px;
-    }
-
-    footer{
-        margin-top: 100px;
-    }
-
-    .encabezado{
-        grid-area: encabezado;
-    }
-
-    .cuerpo{
-        grid-area: cuerpo;
-    }
-
-    .pie{
-        grid-area: pie;
-    }
-
-    .grid{
-        grid-template-columns: 33% 33% 33%;
-        grid-template-rows: 0.1fr 3fr 1fr;
-        display: grid;
-        grid-template-areas:
-                            "encabezado encabezado encabezado"
-                            "cuerpo cuerpo cuerpo"
-                            "pie pie pie";
-
-        grid-gap: 10px;
-    }
-
-    footer{
-        margin-top: 200px;
-    }
-
+.contenido-embebido {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
 }
 
-@media  (min-width:1024px){
+.contenido-embebido iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
 
-    header{
-        background-color: aqua;
-        display: flex;
-        justify-content:space-evenly;
-        padding: 5px;
-        
-    }
+
+@media (min-width:768px) {
+
+    /*tablet en adelante*/
     
-    .menuSuperior li {
-        display: inline-block;
-    }
-    
-    .adopcion{
-        padding: 15px;
-        text-align: center;
-    }
+.footer-especial{
+    margin-bottom: 150px;
 
-    .card{
-        margin-top: 150px;
-        margin-bottom: 10px;
-        text-align: center;
-        display: flex;
-        justify-content: space-evenly;
     }
+}
 
-    .card img{
-        width: 500px;
-    }
+@media (min-width:1024px) {
+    /*escritorio en adelante*/
 
-    .menuSuperior li {
-        display: inline-block;
-    }
 
-    .galeria img{
-    width: 500px;
-    }
-
-    .grid{
-        grid-template-columns: 33% 33% 33%;
-        grid-template-rows:8em 3fr 1fr;
-        display: grid;
-        grid-template-areas:
-                            "encabezado encabezado encabezado"
-                            "cuerpo cuerpo cuerpo"
-                            "pie pie pie";
-
-        grid-gap: 10px;
-    }
-
-    
 }
