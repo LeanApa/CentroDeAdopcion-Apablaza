@@ -9,9 +9,13 @@ nav{
 }
 
 .btn{
-    background-color: #ff9800;
+    background-color: #ff9900;
     color: white;
     
+}
+
+.btn:hover{
+    background-color: #b87c22;
 }
 
 
