@@ -133,6 +133,17 @@ mapa
 }
 
 
+.zoom {
+    transform: scale(1);
+    transition: all 300ms ease-in-out;
+}
+
+.zoom:hover {
+    transform: scale(0.8);
+    border-radius: 10px;
+}
+
+
 @media (min-width:768px) {
 
     /*tablet en adelante*/
