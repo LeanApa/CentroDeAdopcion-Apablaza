@@ -3,85 +3,52 @@
 Skin, tema
 
 */
+nav {
+  background-color: #3993dd; }
 
-nav{
-    background-color: #3993dd;
-}
-
-.btn{
-    background-color: #ff9900;
-    color: white;
-    
-}
-
-.btn:hover{
-    background-color: #b87c22;
-}
-
-
-.navbar-dark .navbar-toggler-icon{
-    background-image: url(../imagenes/menu.svg);
-    border: none;
-}
-/*0d47a1*/
+.btn {
+  background-color: #ff9900;
+  color: white; }
+  .btn:hover {
+    background-color: #b87c22; }
 
 h1,
 h2,
 h3,
-h4{
-    color: #0d47a1;
-}
+h4 {
+  color: #0d47a1;
+  font-family: "Roboto Slab", serif; }
 
-.contacto a{
-    color: #0d47a1;
-}
+.contacto a {
+  color: #0d47a1; }
 
+.contacto__icon {
+  font-size: 1.875rem; }
 
-
-footer{
-    background-color: #212121;  
-}
-
-footer ul{
+footer {
+  background-color: #212121; }
+  footer ul {
     list-style: none;
     font-size: 1.38rem;
-    padding: 0;
-}
+    padding: 0; }
+  footer a {
+    color: white; }
+    footer a:hover {
+      color: grey; }
 
-footer a{
-    text-decoration: none;
-    color:white;
-}
+a {
+  text-decoration: none; }
 
-footer a:hover{
-    text-decoration: none;
-    color: grey;
-}
-
-a{
-    text-decoration: none;
-}
-
-.ul-reset{
-    list-style: none;
-}
+.ul-reset {
+  list-style: none; }
 
 /*
 
-Fuentes
+Fuente principal
 
 */
-
-
-body{
-    font-family: 'Roboto', sans-serif;
-}
-
-h2,h3,h4,h5{
-    font-family: 'Roboto Slab', serif;
-    
-}
-
+body {
+  font-family: "Roboto", sans-serif; }
 
 /*
 
@@ -89,77 +56,47 @@ h2,h3,h4,h5{
 Layout
 
 */
+#quienes {
+  background-image: url(../imagenes/images.jpg);
+  height: 25rem;
+  background-position: left;
+  background-size: 36rem;
+  font-size: 1.188rem;
+  color: #0d47a1; }
 
-
-
-#quienes{
-    background-image: url(../imagenes/images.jpg);
-    height: 25rem;
-    background-position:left;
-    background-size: 36rem;
-    font-size: 1.188rem;
-    color: #0d47a1;
-    
-}
-
-
-.contacto a span{
-    font-size: 1.875rem;
-}
-
-.donde{
-    font-size: 1.5rem;
-}
-
-
+.donde {
+  font-size: 1.5rem; }
 
 /*
 
 mapa
 
 */
-
 .contenido-embebido {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-}
-
-.contenido-embebido iframe {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; }
+  .contenido-embebido iframe {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     right: 0;
     left: 0;
-    bottom: 0;
-}
-
+    bottom: 0; }
 
 .zoom {
-    transform: scale(1);
-    transition: all 300ms ease-in-out;
-}
+  transform: scale(1);
+  transition: all 300ms ease-in-out; }
+  .zoom:hover {
+    transform: scale(1.2);
+    border-radius: 10px; }
 
-.zoom:hover {
-    transform: scale(0.8);
-    border-radius: 10px;
-}
+@media (min-width: 768px) {
+  /*tablet en adelante*/
+  .footer-especial {
+    margin-bottom: 150px; } }
 
-
-@media (min-width:768px) {
-
-    /*tablet en adelante*/
-    
-.footer-especial{
-    margin-bottom: 150px;
-
-    }
-}
-
-@media (min-width:1024px) {
-    /*escritorio en adelante*/
-
-
-}
+@media (min-width: 1024px) {
+  /*escritorio en adelante*/ }
