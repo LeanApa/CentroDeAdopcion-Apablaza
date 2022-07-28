@@ -1,16 +1,10 @@
-/*
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
-Skin, tema
-
-*/
-nav {
-  background-color: #3993dd; }
-
-.btn {
-  background-color: #ff9900;
-  color: white; }
-  .btn:hover {
-    background-color: #b87c22; }
+body {
+  font-family: "Roboto", sans-serif; }
 
 h1,
 h2,
@@ -19,53 +13,43 @@ h4 {
   color: #0d47a1;
   font-family: "Roboto Slab", serif; }
 
-.contacto a {
-  color: #0d47a1; }
-
-.contacto__icon {
-  font-size: 1.875rem; }
-
-footer {
-  background-color: #212121; }
-  footer ul {
-    list-style: none;
-    font-size: 1.38rem;
-    padding: 0; }
-  footer a {
-    color: white; }
-    footer a:hover {
-      color: grey; }
-
 a {
   text-decoration: none; }
 
-.ul-reset {
+.ul-reset, footer ul {
   list-style: none; }
 
-/*
+nav {
+  background-color: #3993dd; }
 
-Fuente principal
+.zoom {
+  transform: scale(1);
+  transition: all 300ms ease-in-out; }
+  .zoom:hover {
+    transform: scale(1.2);
+    border-radius: 10px; }
 
-*/
-body {
-  font-family: "Roboto", sans-serif; }
-
-/*
-
-
-Layout
-
-*/
 #quienes {
-  background-image: url(../imagenes/images.jpg);
+  background-image: url(../recursos/imagenes/images.jpg);
   height: 25rem;
   background-position: left;
   background-size: 36rem;
   font-size: 1.188rem;
   color: #0d47a1; }
 
-.donde {
-  font-size: 1.5rem; }
+.btn {
+  color: white;
+  background-color: #ff9900; }
+  .btn:hover {
+    background-color: #efab45; }
+
+.contacto a {
+  color: #0d47a1; }
+  .contacto a:hover {
+    color: #4884dd; }
+
+.contacto__icon {
+  font-size: 1.875rem; }
 
 /*
 
@@ -86,12 +70,15 @@ mapa
     left: 0;
     bottom: 0; }
 
-.zoom {
-  transform: scale(1);
-  transition: all 300ms ease-in-out; }
-  .zoom:hover {
-    transform: scale(1.2);
-    border-radius: 10px; }
+footer {
+  background-color: #212121; }
+  footer ul {
+    font-size: 1.38rem;
+    padding: 0; }
+  footer a {
+    color: white; }
+    footer a:hover {
+      color: grey; }
 
 @media (min-width: 768px) {
   /*tablet en adelante*/

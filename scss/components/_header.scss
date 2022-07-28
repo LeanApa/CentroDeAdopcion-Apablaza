@@ -1,0 +1,26 @@
+nav {
+    background-color: #3993dd;
+
+}
+
+.zoom {
+    transform: scale(1);
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.2);
+        border-radius: 10px;
+    }
+}
+
+
+
+#quienes {
+    background-image: url(../recursos/imagenes/images.jpg);
+    height: 25rem;
+    background-position: left;
+    background-size: 36rem;
+    font-size: 1.188rem;
+    color: $color-primario;
+
+}

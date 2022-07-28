@@ -1,0 +1,11 @@
+.contacto {
+
+    
+    a {
+        @include vinculos($color-primario,#4884dd);
+    }
+
+    &__icon {
+        font-size: 1.875rem;
+    }
+}

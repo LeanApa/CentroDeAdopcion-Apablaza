@@ -1,160 +1,18 @@
-@import "variables";
-
-/*
-
-Skin, tema
-
-*/
-
-nav {
-    background-color: #3993dd;
-
-}
-
-
-.btn {
-    background-color: #ff9900;
-    color: $color-contraste;
-
-    &:hover {
-        background-color: #b87c22;
-    }
-
-}
-
-
-h1,
-h2,
-h3,
-h4 {
-    color: $color-primario;
-    font-family: $fuente-titulos;
-}
-
-.contacto {
-    a {
-        color: $color-primario;
-    }
-
-    &__icon {
-        font-size: 1.875rem;
-    }
-}
-
-
-footer {
-    background-color: #212121;
-
-    ul {
-        list-style: none;
-        font-size: 1.38rem;
-        padding: 0;
-    }
-
-    a {
-        color: $color-contraste;
-
-        &:hover {
-            color: grey;
-        }
-    }
-}
-
-
-a {
-    text-decoration: none;
-}
-
-
-.ul-reset {
-    list-style: none;
-}
-
-
-/*
-
-Fuente principal
-
-*/
-
-
-body {
-    //font-family: 'Roboto', sans-serif;
-    font-family: $fuente-primaria;
-}
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'base/reset';
+@import 'components/header';
+@import 'components/buttons';
+@import 'components/contacto';
+@import 'components/maps';
+@import 'components/footer';
+@import 'components/mediaqueries';
 
 
 
-/*
-
-
-Layout
-
-*/
-
-#quienes {
-    background-image: url(../imagenes/images.jpg);
-    height: 25rem;
-    background-position: left;
-    background-size: 36rem;
-    font-size: 1.188rem;
-    color: $color-primario;
-
-}
-
-.donde {
-    font-size: 1.5rem;
-}
-
-
-/*
-
-mapa
-
-*/
-
-.contenido-embebido {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-
-    iframe {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-    }
-}
 
 
 
-.zoom {
-    transform: scale(1);
-    transition: all 300ms ease-in-out;
-
-    &:hover {
-        transform: scale(1.2);
-        border-radius: 10px;
-    }
-}
 
 
-@media (min-width:768px) {
 
-    /*tablet en adelante*/
-
-    .footer-especial {
-        margin-bottom: 150px;
-
-    }
-}
-
-@media (min-width:1024px) {
-    /*escritorio en adelante*/
-
-
-}

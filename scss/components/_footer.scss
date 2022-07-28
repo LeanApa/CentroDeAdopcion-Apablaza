@@ -1,0 +1,15 @@
+footer {
+    background-color: #212121;
+
+    ul {
+        @extend .ul-reset;
+        font-size: 1.38rem;
+        padding: 0;
+    }
+
+    a {
+
+         @include vinculos($color-contraste,grey); 
+         
+    }
+}

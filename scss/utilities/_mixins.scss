@@ -1,0 +1,14 @@
+@mixin botones($color,$color-background, $color-hover) {
+    color: $color;
+    background-color: $color-background;
+        &:hover{
+            background-color: $color-hover;
+        }
+}
+
+@mixin vinculos($color, $color-hover) {
+    color: $color;
+        &:hover{
+            color: $color-hover;
+        }
+}
